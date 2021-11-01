@@ -33,6 +33,6 @@ app.conf.beat_schedule = {
     # Execute the Speed Test every 60 minutes
     'store_exchange_info-60min': {
         'task': "task_store_exchange_info",
-        'schedule': crontab(minute='*/1'),
+        'schedule': crontab(hour='*/1'),
     },
 }
